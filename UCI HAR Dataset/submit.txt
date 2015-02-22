@@ -1,4 +1,4 @@
-"Subject" "activityName" "measurement" "value"
+"subject" "activityName" "measurement" "value"
 "1" 1 "WALKING" "tBodyAcc-mean()-X" 0.277330758736842
 "2" 10 "WALKING" "tBodyAcc-mean()-X" 0.278574076603774
 "3" 8 "WALKING" "tBodyAcc-mean()-X" 0.27468631

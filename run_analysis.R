@@ -1,4 +1,4 @@
-setwd("./UCI\ HAR\ Dataset")
+
 library(dplyr)
 library(reshape2)
 ##Read table headers
@@ -50,15 +50,16 @@ combined_dataset["subject"]<-combine_subject
 ##Find mean of all variables in dataset grouped by subject and activityId
 aggData<-aggregate(combined_dataset[,1:66],list(Activity = combined_dataset$"activityId",Subject = combined_dataset$"subject"),mean)
 
-##assign appropriate name for the activity Id
+##assign appropriate name for the activity names column
 aggData <- merge(x = aggData, y = activity_labels, by.x="Activity", by.y="V1")
 aggData<-select(aggData, -(Activity))
 aggData<-rename(aggData, c(V2 = "activityName"))
+aggData<-rename(aggData, c(Subject = "subject"))
 
 ##convert data to long format
 data.long <- melt(aggData,
                   # ID variables - all the variables to keep but not split apart on
-                  id.vars=c("Subject","activityName"),
+                  id.vars=c("subject","activityName"),
                   # The source columns
                   measure.vars=c(colnames(aggData[,2:67])),
                   # column that the measurement came from
