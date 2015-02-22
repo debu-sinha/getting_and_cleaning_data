@@ -63,6 +63,6 @@ Assumption is that run_analysis.R will be in same working directory as the unzip
 * Assign approprite labels to columns extracted.
 * Merge the features dataset with activity label and subject datasets.
 * Calculate mean value of features grouped by activity and subject.
-* Associate activity names with the acitivity_id and convert the transformed dataset into long format.
+* Associate activity names with the acitivityId and convert the transformed dataset into long format.
 * Write tidy dataset to file submit.txt in UCI HAR Dataset directory.
  

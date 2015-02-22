@@ -1,4 +1,4 @@
-
+setwd("./UCI\ HAR\ Dataset")
 library(dplyr)
 library(reshape2)
 ##Read table headers
