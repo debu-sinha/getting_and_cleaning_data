@@ -93,23 +93,23 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
--tBodyAcc-XYZ
--tGravityAcc-XYZ
--tBodyAccJerk-XYZ
--tBodyGyro-XYZ
--tBodyGyroJerk-XYZ
--tBodyAccMag
--tGravityAccMag
--tBodyAccJerkMag
--tBodyGyroMag
--tBodyGyroJerkMag
--fBodyAcc-XYZ
--fBodyAccJerk-XYZ
--fBodyGyro-XYZ
--fBodyAccMag
--fBodyAccJerkMag
--fBodyGyroMag
--fBodyGyroJerkMag
+- tBodyAcc-XYZ
+- tGravityAcc-XYZ
+- tBodyAccJerk-XYZ
+- tBodyGyro-XYZ
+- tBodyGyroJerk-XYZ
+- tBodyAccMag
+- tGravityAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc-XYZ
+- fBodyAccJerk-XYZ
+- fBodyGyro-XYZ
+- fBodyAccMag
+- fBodyAccJerkMag
+- fBodyGyroMag
+- fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
@@ -182,7 +182,7 @@ std(): Standard deviation
      "fBodyBodyGyroMag-mean()"    
      "fBodyBodyGyroMag-std()"     
      "fBodyBodyGyroJerkMag-mean()"
-     "fBodyBodyGyroJerkMag-std()"
+	 "fBodyBodyGyroJerkMag-std()"
 
 [4] "value" numeric
  ALL Data presented in file is a MEAN of the original input data, grouped by activityName & subject 
