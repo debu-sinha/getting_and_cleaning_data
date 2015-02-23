@@ -1,4 +1,4 @@
- setwd("./UCI\ HAR\ Dataset")
+setwd("./UCI\ HAR\ Dataset")
 library(dplyr)
 library(reshape2)
 ##Read table headers
@@ -63,7 +63,7 @@ data.long <- melt(aggData,
                   # The source columns
                   measure.vars=c(colnames(aggData[,2:67])),
                   # column that the measurement came from
-                  variable.name="measurement"
+                  variable.name="feature"
                 )
 
 write.table(data.long,"./submit.txt")
