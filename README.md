@@ -10,9 +10,9 @@ The script run-analysis.R needs to perform these five functions:
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
-A
 
 ## How ```run_analysis.R``` implements the above steps:
+
 * Require ```reshape2``` and ```dplyr``` libraries.
 * Load the features and activity labels.
 * Load and combine both test and train data.
